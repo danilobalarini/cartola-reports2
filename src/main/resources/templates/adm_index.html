@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Admin</title>
+    <!--/*/ <th:block th:include="fragments/general.html :: headerfiles"> </th:block> /*/-->
+</head>
+
+<body>
+<div class="wrapper">
+    <div th:replace="fragments/admin.html :: navigation-bar"></div>
+    <div th:replace="fragments/admin.html :: main-sidebar"></div>
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <div th:replace="fragments/admin.html :: content-header(title='Dashboard v3', bread_item='Home', bread_item_active='Dashboard v3')"></div>
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                content goes here
+                <!-- /.container-fluid -->
+            </div>
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <div th:replace="fragments/admin.html :: main-footer"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- Javascript -->
+<!-- End of Javascript -->
+
+</body>
+
+</html>

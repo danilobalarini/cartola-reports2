@@ -6,14 +6,16 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 
 @Controller
-@RequestMapping("")
-class ReportsController {
+@RequestMapping("/admin")
+class AdminController {
 
-    private val logger = LoggerFactory.getLogger(ReportsController::class.java)
+    private val logger = LoggerFactory.getLogger(AdminController::class.java)
 
-    @GetMapping("/hello")
-    fun helloworld() : String {
-        logger.info("opa")
-        return "helloworld"
+    @GetMapping("")
+    fun admindex() : String {
+        logger.info("entramos no index do admin!")
+        return "adm_index"
     }
+
+
 }
