@@ -17,5 +17,4 @@ class AdminController {
         return "adm_index"
     }
 
-
 }
